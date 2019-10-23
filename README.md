@@ -1,1 +1,3 @@
-# Hand-Gesture-Device
+# Hand-Gesture-Recognition-System-Using-An-Android-Application-For-Dumb-People
+
+The proposed model will be consisting of combination of hardware and software. 		Hardware part will include flex sensors on each finger, microcontroller, power 		supply, and android phone and Bluetooth module. Software part will include 	programming for android phone application.Hardware part will be consisting of 	flex sensors to take input from different gestures through gloves, microcontroller 	to convert input analogue data to digital data and for further processing, power 	supply to provide voltages to specific units, and finally Bluetooth module to send 	the data from controller to android mobile. Here HC-05 Bluetooth module will be used. 
