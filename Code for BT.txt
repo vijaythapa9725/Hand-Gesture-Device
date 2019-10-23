@@ -1,0 +1,90 @@
+#include <SoftwareSerial.h>
+
+SoftwareSerial BTserial(10,9);
+
+int flexPin0 = A0;
+int flexPin1=A1;
+int flexPin2=A2;
+int flexPin3=A3;
+int flexPin4=A4;
+
+void setup() {
+  Serial.begin(9600);
+  BTserial.begin(9600);
+  delay(200);
+}
+
+void loop() {
+  int flexVal0,flexVal1,flexVal2,flexVal3,flexVal4;
+  
+  flexVal0 = analogRead(flexPin0);
+  Serial.print("Sensor 1: ");
+  Serial.println(flexValue0);  
+  if (flexVal < 900)
+  {
+    Serial.println("Food");
+    delay(1000);
+  }
+  else
+  {
+    Serial.println("Water");
+    delay(1000);
+    }
+     
+  flexVal1 = analogRead(flexPin1);
+  Serial.print("Sensor 2: ");
+  Serial.println(flexValue1);
+  if (flexVal1 < 950)
+  {
+    Serial.println("How are you?");
+    delay(1000);
+  }
+  else
+  {
+    Serial.println("Nice to see you!");
+    delay(1000);
+  }
+
+  flexVal2 = analogRead(flexPin2);
+  Serial.print("Sensor 3: ");
+  Serial.println(flexVal2);
+  if (flexVal2 < 950)
+  {
+    Serial.println("Can I help you?");
+    delay(1000);
+  }
+  else
+  {
+    Serial.println("Its a nice weather.");
+    delay(1000);
+  }
+
+
+  if(flexVal0 <900 && flexVal1 <850 && flexVal2 >800)
+ 
+  { 
+    Serial.println("A");
+    delay(1000);
+  }
+
+  if(value1 <80 && value2 >150 && value3 <80)
+ 
+  { 
+    Serial.println("B");
+    delay(1000);
+  }
+
+  if(value1 >150  && value2 <80 && value3 <80)
+ 
+  {
+    Serial.println("C");
+    delay(1000);
+  }
+
+   if(value1 <80  && value2 <80 && value3 <80)
+ 
+  { 
+    Serial.println("D");
+    delay(1000);
+  }
+}
